@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Personal Data Sync</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.7; color: #222; background: #fff; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #ddd; }
+</style>
+</head>
+<body>
+<h1>Personal Data Sync</h1>
+<p>Personal Data Sync は、作者が自分自身の Google アカウントのデータを自分の端末から読み書きするためだけに作った、個人用の非公開ツールです。一般の方への提供・配布は行っていません。</p>
+<p><a href="#privacy">プライバシーポリシー</a> ・ <a href="#terms">利用規約</a></p>
+
+<h2 id="about">概要</h2>
+<ul>
+  <li>利用者は作者本人のみです。</li>
+  <li>Google OAuth 2.0 で作者本人の Google アカウントに接続し、Google Tasks（タスクの読み書き）と Google Health API の睡眠データ（読み取りのみ）にアクセスします。</li>
+  <li>Web サービスやサーバーとしては動作しておらず、作者が管理する端末上でのみ実行されます。</li>
+</ul>
+
+<h2 id="privacy">プライバシーポリシー</h2>
+<ul>
+  <li><strong>取得するデータ</strong>: 作者本人の Google Tasks のタスク情報と、作者本人の睡眠データのみです。本人以外の方のデータを取得・保存することはありません。</li>
+  <li><strong>利用目的</strong>: 作者本人のタスク管理と睡眠記録の整理、およびそれらに関する作者本人の作業補助のためにのみ利用します。</li>
+  <li><strong>保存場所</strong>: 取得したデータ（およびそこから作成した記録）は、作者本人が管理する端末に保存し、作者本人の端末間でのみ同期します。認証情報はツールを実行する端末にのみ保存します。</li>
+  <li><strong>保護方法</strong>: 認証情報は、実行する端末上で作者本人のみが読み書きできるアクセス権限に制限して保存します。端末間の同期は暗号化された通信で、作者本人の端末どうしの間でのみ行います。</li>
+  <li><strong>外部への送信</strong>: 作者は作業補助に AI アシスタント（Anthropic 社の Claude）を利用しており、作者がその場で指示したときに、タスク情報や睡眠記録の一部が Anthropic 社へ送信されることがあります。送信されたデータは Anthropic 社の規約と作者のアカウント設定に従って扱われます。これ以外の第三者へ送信・共有することはありません。</li>
+  <li><strong>販売・広告</strong>: 取得したデータを販売したり、広告に利用したりすることはありません。</li>
+  <li><strong>削除</strong>: 作者はいつでも Google アカウントの設定から本ツールのアクセス権を取り消せます（以後の取得が止まります）。すでに保存した記録は、作者本人の各端末から削除します。Anthropic 社へ送信済みのデータは、同社の保持・削除の条件に従います。アクセス権の取り消しによって Google 側の元データが削除されることはありません。</li>
+  <li><strong>ポリシーの遵守</strong>: Google API から取得した情報の利用と他のアプリへの転送は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Use 要件を含む）および <a href="https://developers.google.com/health/policies/health-api-developer-user-data-policy">Google Health API Developer and User Data Policy</a>（Limited Use 要件を含む）に従います。</li>
+</ul>
+
+<h2 id="terms">利用規約</h2>
+<ul>
+  <li>本ツールは作者の個人利用専用です。作者以外の方による利用は想定しておらず、許可していません。</li>
+  <li>本ツールは現状のまま提供され、いかなる保証もありません。</li>
+</ul>
+
+<p><small>最終更新: 2026-11-10</small></p>
+</body>
+</html>
